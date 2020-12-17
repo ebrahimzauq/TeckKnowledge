@@ -1,0 +1,67 @@
+.site-header{
+	background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url(../images/intro-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	position: relative;
+	overflow: auto;
+	.header{
+		position: fixed;
+		width: 100%;
+		transition: all 0.9s;
+
+	}
+	.white{
+		background: #fff;
+		transition: all 0.5s;
+		.site-name{
+			a{
+				color: #000;
+			}
+		}
+		.site-menu{
+			a{
+				color: #000;
+			}
+		}
+	}
+	.site-name{
+		padding: 20px 15px;
+		a{
+			padding: 5px;
+			color: #fff;
+
+		}
+	}
+	.site-menu{
+		margin-left: auto; 
+		ul{
+			li{
+				padding: 20px 15px;
+				a{
+					padding: 5px;
+					color: #fff;
+				}
+			}
+		}
+	}
+	.intro-title{
+		h1{
+			color: $white;
+			text-align: center;
+			font: rem(70) $font-md;
+			font-weight: bold;
+			margin-top: 150px;
+
+		}
+	}
+	.intro-sub-title{
+		text-align: center;
+		color: #fff;
+		font:rem(40) $font-md;
+		.text-slider-items{
+			display: none;
+		}
+	}
+
+}

@@ -1,0 +1,64 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css";
+body {
+  font: 16px/1.5 arial; }
+
+a {
+  transition: all 1.5s;
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px; }
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px; }
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 12px; }
+
+h4 {
+  font-size: 16px;
+  margin-bottom: 10px; }
+
+p {
+  font: 15px/1.6;
+  margin-bottom: 20px; }
+
+p:last-of-type {
+  margin-bottom: 0; }
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.flex {
+  display: flex; }
+
+button {
+  outline: 0;
+  border: 0; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.site-header .site-name {
+  padding: 16px 20px; }
+  .site-header .site-name a {
+    padding: 5px; }
+.site-header .site-menu {
+  margin-left: auto; }
+  .site-header .site-menu li {
+    padding: 16px 20px; }
+    .site-header .site-menu li a {
+      padding: 5px; }
+
+/*# sourceMappingURL=style.csss.map */

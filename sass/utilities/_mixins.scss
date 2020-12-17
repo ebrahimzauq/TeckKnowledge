@@ -1,0 +1,18 @@
+//breakpoint
+@mixin mquery($size) {
+    @if $size == mobile {
+        @media only screen and (max-width: 767px) {
+            @content;
+        }
+    }
+    @if $size == small {
+        @media only screen and (max-width: 480px) {
+            @content;
+        }
+    }
+    @if $size == large {
+        @media only screen and (min-width: 1000px) {
+            @content;
+        }
+    }
+}

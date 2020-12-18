@@ -160,7 +160,8 @@ img {
     .profile .right-section p {
       font: 1.25rem "ts-reg", sans-serif;
       color: #4e4e4e;
-      line-height: 1.6; }
+      line-height: 1.6;
+      text-align: justify; }
       .profile .right-section p strong {
         font-weight: bold; }
 
@@ -308,7 +309,8 @@ img {
           left: 0; }
       .paralax-mf .inner .get-touch p {
         font-size: 1.25rem;
-        font-weight: 300; }
+        font-weight: 300;
+        text-align: justify; }
       .paralax-mf .inner .get-touch ul li {
         margin-bottom: 10px; }
         .paralax-mf .inner .get-touch ul li a {

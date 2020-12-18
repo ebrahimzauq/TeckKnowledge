@@ -75,7 +75,8 @@ img {
   .site-header .header {
     position: fixed;
     width: 100%;
-    transition: all 0.9s; }
+    transition: all 0.9s;
+    z-index: 1; }
   .site-header .white {
     background: #fff;
     transition: all 0.5s; }
@@ -114,8 +115,14 @@ img {
     background: #fff;
     box-shadow: 0px 0px 15px rgba(34, 34, 34, 0.4);
     padding: 50px 30px; }
+    @media only screen and (max-width: 767px) {
+      .profile .profile-info {
+        display: block; } }
   .profile .left-section {
     width: 55%; }
+    @media only screen and (max-width: 767px) {
+      .profile .left-section {
+        width: 100%; } }
     .profile .left-section .about-info {
       padding-left: 40px; }
       .profile .left-section .about-info .title {
@@ -134,6 +141,9 @@ img {
           background-color: #0078ff; }
   .profile .right-section {
     width: 45%; }
+    @media only screen and (max-width: 767px) {
+      .profile .right-section {
+        width: 100%; } }
     .profile .right-section h5 {
       font-size: 2rem;
       font-weight: normal;
@@ -173,9 +183,15 @@ img {
       transform: translate(-50%);
       margin-top: 10px; }
   .blog .wrapper .cards {
-    margin: 60px -16px 0; }
+    margin: 60px -16px 0;
+    flex-wrap: wrap; }
     .blog .wrapper .cards li {
-      padding: 0 16px; }
+      padding: 0 16px;
+      width: 33.33%; }
+      @media only screen and (max-width: 767px) {
+        .blog .wrapper .cards li {
+          width: 100%;
+          margin-bottom: 30px; } }
       .blog .wrapper .cards li .inner {
         background: #fff;
         box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1); }
@@ -267,10 +283,16 @@ img {
   .paralax-mf .inner {
     background: #fff;
     box-shadow: 0px 0px 15px rgba(34, 34, 34, 0.4);
-    padding: 32px; }
+    padding: 32px;
+    flex-wrap: wrap; }
     .paralax-mf .inner .get-touch {
       width: 50%;
       padding-left: 50px; }
+      @media only screen and (max-width: 767px) {
+        .paralax-mf .inner .get-touch {
+          width: 100%;
+          padding-left: 0;
+          margin-top: 30px; } }
       .paralax-mf .inner .get-touch h5 {
         font-size: 2rem;
         font-weight: normal;
@@ -324,6 +346,9 @@ img {
     .paralax-mf .inner .message-us {
       padding-right: 20px;
       width: 50%; }
+      @media only screen and (max-width: 767px) {
+        .paralax-mf .inner .message-us {
+          width: 100%; } }
       .paralax-mf .inner .message-us h5 {
         font-size: 2rem;
         font-weight: normal;

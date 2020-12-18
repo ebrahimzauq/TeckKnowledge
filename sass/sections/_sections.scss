@@ -4,10 +4,16 @@
 		background: #fff;
 		box-shadow: 0px 0px 15px rgba(34, 34, 34, 0.4);
 		padding: 50px 30px;
+		@include mquery(mobile){
+			display: block;
+		}
 	}
 
 	.left-section{
 		width: 55%;
+		@include mquery(mobile){
+			width: 100%;
+		}
 		.about-info{
 			padding-left: 40px;
 			.title{
@@ -36,6 +42,9 @@
 	}
 	.right-section{
 		width: 45%;
+		@include mquery(mobile){
+			width: 100%;
+		}
 		h5{
 			font-size: 2rem;
 			font-weight: normal;
@@ -88,10 +97,15 @@
 		}
 		.cards{
 			margin: 60px -16px 0;
-			
+			flex-wrap: wrap;
 
 			li{
 				padding: 0 16px;
+				width: 33.33%;
+				@include mquery(mobile){
+					width: 100%;
+					margin-bottom: 30px;
+				}
 				.inner{
 					background: #fff;
 					box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
@@ -213,10 +227,15 @@
 		background: #fff;
 		box-shadow: 0px 0px 15px rgba(34, 34, 34, 0.4);
 		padding: 32px;
-		
+		flex-wrap: wrap;
 		.get-touch{
 			width: 50%;
 			padding-left: 50px;
+			@include mquery(mobile){
+				width: 100%;
+				padding-left: 0;
+				margin-top: 30px;
+			}
 			h5{
 				font-size: 2rem;
 				font-weight: normal;
@@ -295,6 +314,9 @@
 		.message-us{
 			padding-right: 20px;
 			width: 50%;
+			@include mquery(mobile){
+				width: 100%;
+			}
 			h5{
 				font-size: 2rem;
 				font-weight: normal;
